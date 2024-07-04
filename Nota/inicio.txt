@@ -1,0 +1,2 @@
+Crear plantilla Minimal API de .Net
+  [terminal]: dotnet new web
