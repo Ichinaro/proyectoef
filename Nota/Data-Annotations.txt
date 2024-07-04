@@ -1,0 +1,17 @@
+Usamos Data Annotations para validar datos de nuestros Modelos en:
+./Models/[Categoria.cs, Tarea.cs]
+
+### [Key]
+  - valida que el dato sea una clave primaria
+
+### [ForeignKey]
+  - valida que el dato sea una clave foranea
+
+### [Required]
+  - valida que el dato sea requerido u obligatorio
+
+### [MaxLength(150)]
+  - valida que el dato tenga un máximo de 150 caracteres
+
+### [NotMapped]
+  - valida que el dato no sea mapeado o creado en la DB
