@@ -1,0 +1,25 @@
+Antes de continuar con la configuración de EF
+instalaremos las siguientes dependencias
+
+www.nuget.org (.NET CLI)
+ - Microsoft.EntityFrameworkCore //ORM
+ - Microsoft.EntityFrameworkCore.InMemory //Para trabajar con un DB en memoria
+ - Microsoft.EntityFrameworkCore.SqlServer //Permite que EF trabaje con DB SQL
+
+Nota: procura no instalar versiones "preview" por que no son estables
+
+-----------------------------------------------------------------------
+
+Configurar EF : ./TareasContext.cs
+
+### Explicacion `DbContext`
+  - actúa como intermediario entre el código y la base de datos
+
+### Explicacion `DbSet`
+  - mapea las tablas de la base de datos a las clases de los modelos
+  - proporciona métodos para realizar operaciones CRUD
+
+### Explicacion DbContextOptions
+ *** TareasContext(DbContextOptions<TareasContext> options) : base(options)
+ - proporciona las opciones de configuración necesaria para inicializar una instancia de DbContext
+ - el constructor llama al constructor `base` que proviene de DbContext pasando options
